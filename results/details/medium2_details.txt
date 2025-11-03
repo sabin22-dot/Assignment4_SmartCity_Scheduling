@@ -1,0 +1,41 @@
+dataset: medium2.json
+weight_model: edge
+source_vertex: 0
+source_comp: 4
+
+SCC components (index: size | nodes):
+  0: 1 | [4]
+  1: 1 | [3]
+  2: 1 | [1]
+  3: 1 | [2]
+  4: 1 | [0]
+  5: 1 | [9]
+  6: 1 | [8]
+  7: 1 | [7]
+  8: 1 | [6]
+  9: 1 | [5]
+  10: 1 | [14]
+  11: 1 | [13]
+  12: 3 | [12, 11, 10]
+
+Condensation DAG: V_dag=13, E_dag=11
+dag_edges (u -> v, w):
+  1 -> 0 , w=2.000
+  2 -> 1 , w=2.000
+  3 -> 1 , w=1.000
+  4 -> 2 , w=2.000
+  4 -> 3 , w=2.000
+  6 -> 5 , w=2.000
+  7 -> 6 , w=2.000
+  8 -> 7 , w=2.000
+  9 -> 8 , w=2.000
+  11 -> 10 , w=2.000
+  12 -> 11 , w=2.000
+
+topo_order_components:
+  [4, 9, 12, 2, 3, 8, 11, 1, 7, 10, 0, 6, 5]
+derived_order_vertices:
+  [0, 5, 12, 11, 10, 1, 2, 6, 13, 3, 7, 14, 4, 8, 9]
+
+dist_from_source (by component index):
+  [5.000, 3.000, 2.000, 2.000, 0.000, INF, INF, INF, INF, INF, INF, INF, INF]
